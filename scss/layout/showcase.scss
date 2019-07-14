@@ -21,11 +21,18 @@
     &__slide{
         display: flex;
         overflow: hidden;
-        width: 80%
+        width: 80%;
+        &--content{
+            display: flex;
+            position: relative;
+            transition: 1s;
+            right: 0;
+        }
     }
 
     &__item{
         // width: calc(100vw / 4);
+        
         &--img{
             display: block;
             width: 90%;

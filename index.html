@@ -20,8 +20,28 @@
     <!--state-->
     <link rel="stylesheet" href="css/state/state.css">
 
+    <script src="lib/_jquery/jquery.js"></script>
+    <script src="js/js.js"></script>
+
 </head>
 <body>
+    <header>
+        <nav class="menu">
+            <ul class="menu__principal">
+                <li class="menu__principal--item">Logo</li>
+                <li class="menu__principal--item">
+                    Feminino
+
+                </li>
+                <li class="menu__principal--item">Masculino</li>
+                <li class="menu__principal--item">Mini</li>
+                <li class="menu__principal--item">Gifts</li>
+                <li class="menu__principal--item">Brindes</li>
+                <li class="menu__principal--item">Sale</li>
+            </ul>
+
+        </nav>
+    </header>
     <main class="container">
         <section class="banner">
             <img src="imgs/banner.png" alt="" class="banner--img">
@@ -32,39 +52,47 @@
                 <p class="showcase__box--paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit seddo</p>
             </div>
             <div class="showcase__view">
-                <span class="showcase__view--arrow">-</span>
+                <span class="showcase__view--arrow" id="prev">-</span>
                 <div class="showcase__slide">
-                    <div class="showcase__item">
-                        <img src="imgs/view.png" alt="" class="showcase__item--img">
-                        <div class="showcase__description">
-                            <h3 class="showcase__description--title">Shower sailor knot</h3>
-                            <span class="showcase__description--price">R$ 298,00</span>
+                    <div class="showcase__slide--content">
+                        <div class="showcase__item">
+                            <img src="imgs/view.png" alt="" class="showcase__item--img">
+                            <div class="showcase__description">
+                                <h3 class="showcase__description--title">Shower sailor knot</h3>
+                                <span class="showcase__description--price">R$ 298,00</span>
+                            </div>
+                        </div>
+                        <div class="showcase__item">
+                            <img src="imgs/view.png" alt="" class="showcase__item--img">
+                            <div class="showcase__description">
+                                <h3 class="showcase__description--title">Shower sailor knot</h3>
+                                <span class="showcase__description--price">R$ 298,00</span>
+                            </div>
+                        </div>
+                        <div class="showcase__item">
+                            <img src="imgs/view.png" alt="" class="showcase__item--img">
+                            <div class="showcase__description">
+                                <h3 class="showcase__description--title">2 sailor knot</h3>
+                                <span class="showcase__description--price">R$ 298,00</span>
+                            </div>
+                        </div>
+                        <div class="showcase__item">
+                            <img src="imgs/view.png" alt="" class="showcase__item--img">
+                            <div class="showcase__description">
+                                <h3 class="showcase__description--title">3 sailor knot</h3>
+                                <span class="showcase__description--price">R$ 298,00</span>
+                            </div>
+                        </div>
+                        <div class="showcase__item">
+                            <img src="imgs/view.png" alt="" class="showcase__item--img">
+                            <div class="showcase__description">
+                                <h3 class="showcase__description--title">4 sailor knot</h3>
+                                <span class="showcase__description--price">R$ 298,00</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="showcase__item">
-                        <img src="imgs/view.png" alt="" class="showcase__item--img">
-                        <div class="showcase__description">
-                            <h3 class="showcase__description--title">2 sailor knot</h3>
-                            <span class="showcase__description--price">R$ 298,00</span>
-                        </div>
-                    </div>
-                    <div class="showcase__item">
-                        <img src="imgs/view.png" alt="" class="showcase__item--img">
-                        <div class="showcase__description">
-                            <h3 class="showcase__description--title">3 sailor knot</h3>
-                            <span class="showcase__description--price">R$ 298,00</span>
-                        </div>
-                    </div>
-                    <div class="showcase__item">
-                        <img src="imgs/view.png" alt="" class="showcase__item--img">
-                        <div class="showcase__description">
-                            <h3 class="showcase__description--title">4 sailor knot</h3>
-                            <span class="showcase__description--price">R$ 298,00</span>
-                        </div>
-                    </div>
-
                 </div>
-                <span class="showcase__view--arrow">-></span>
+                <span class="showcase__view--arrow" id="next">-></span>
             </div>
         </section>
         <section class="content">
