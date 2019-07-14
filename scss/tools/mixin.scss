@@ -29,3 +29,11 @@
     }
       
 }
+
+@mixin setOrderMenu($number:1){
+    @for $var from 1 to $number {
+        &--item:nth-child(#{$var}){
+            order: $var;
+        }
+    }
+}

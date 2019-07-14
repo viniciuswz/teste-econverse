@@ -46,6 +46,19 @@ $(document).ready(function(){
 
 
     
-
+    $('.menu__main--name').click(function(e){
+        let element = $(this).parent().find('.submenu');
+        if(element['length'] == 1){
+            element.toggleClass('ativo');
+        }
+        $(this).toggleClass('menu__main--name-ativo');
+    })
+    $('.submenu__item--bold').click(function(e){
+        
+        let element = $(this).parent().find('.submenu__show');
+        if(element['length'] == 1){
+            element.toggleClass('submenu__show-ativo');
+        }
+    })
     
 })

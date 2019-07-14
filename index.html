@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/base/all.css">
     <link rel="stylesheet" href="css/base/reset.css">
     <!--layout-->
+    <link rel="stylesheet" href="css/layout/menu.css">
     <link rel="stylesheet" href="css/layout/banner.css">
     <link rel="stylesheet" href="css/layout/showcase.css">
     <link rel="stylesheet" href="css/layout/content.css">
@@ -25,20 +26,67 @@
 
 </head>
 <body>
-    <header>
+    <header class="container">
+        <div></div>
         <nav class="menu">
-            <ul class="menu__principal">
-                <li class="menu__principal--item">Logo</li>
-                <li class="menu__principal--item">
-                    Feminino
-
+            <ul class="menu__main">
+                <li class="menu__main--item menu__main--logo">Logo</li>
+                <li class="menu__main--item">
+                    <span class="menu__main--name">Feminino</span>
+                    <div class="submenu">
+                        <div class="submenu__content">
+                            <div class="submenu__item">
+                                <a href="#" class="submenu__item--bold">Best Sellers</a>
+                                <a href="#" class="submenu__item--bold">New in</a>
+                                <a href="#" class="submenu__item--bold">Made to order</a>
+                                <a href="#" class="submenu__item--bold">Shop instagram</a>
+                            </div>
+                            <div class="submenu__item">
+                                <h3 href="#" class="submenu__item--bold">Modelos</h3>
+                                <div class="submenu__show">
+                                    <a href="#" class="submenu__item--link">Loafers</a>
+                                    <a href="#" class="submenu__item--link">Flats</a>
+                                    <a href="#" class="submenu__item--link">Heels</a>
+                                    <a href="#" class="submenu__item--link-bold">Ver todos</a>
+                                </div>
+                            </div>
+                            <div class="submenu__item">
+                                <h3 href="#" class="submenu__item--bold">Estilos</h3>
+                                <div class="submenu__show">
+                                    <a href="#" class="submenu__item--link">Estilos</a>
+                                    <a href="#" class="submenu__item--link">Básicos</a>
+                                    <a href="#" class="submenu__item--link">Fun</a>
+                                    <a href="#" class="submenu__item--link-bold">Ver todos</a>
+                                </div>
+                            </div>
+                            <div class="submenu__item">
+                                <h3 href="#" class="submenu__item--bold">Ocasião</h3>
+                                <div class="submenu__show">
+                                    <a href="#" class="submenu__item--link">praia</a>
+                                    <a href="#" class="submenu__item--link">Viagem</a>
+                                    <a href="#" class="submenu__item--link">Trabalho</a>
+                                    <a href="#" class="submenu__item--link-bold">Ver todos</a>
+                                </div>
+                            </div>
+                            <div class="submenu__item">
+                                <span href="#" class="submenu__item--space"></span>
+                                <a href="#" class="submenu__item--link">praia</a>
+                                <a href="#" class="submenu__item--link">Viagem</a>
+                                <a href="#" class="submenu__item--link">Trabalho</a>
+                                <a href="#" class="submenu__item--link-bold">Ver todos</a>
+                            </div>
+                        </div>
+                    </div>
                 </li>
-                <li class="menu__principal--item">Masculino</li>
-                <li class="menu__principal--item">Mini</li>
-                <li class="menu__principal--item">Gifts</li>
-                <li class="menu__principal--item">Brindes</li>
-                <li class="menu__principal--item">Sale</li>
+                <li class="menu__main--item"><span class="menu__main--name">Masculino</span></li>
+                <li class="menu__main--item"><span class="menu__main--name">Mini</span></li>
+                <li class="menu__main--item"><span class="menu__main--name">Gifts</span></li>
+                <li class="menu__main--item"><span class="menu__main--name">Brindes</span></li>
+                <li class="menu__main--item"><span class="menu__main--name">Sale</span></li>
             </ul>
+            <div class="menu__search">
+                <input type="text" placeholder="buscar">
+            </div>
 
         </nav>
     </header>
