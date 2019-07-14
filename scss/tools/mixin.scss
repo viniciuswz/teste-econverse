@@ -1,0 +1,31 @@
+@mixin container {
+    display: block;
+    width: 100%;
+    max-width: 1256px;
+    margin: 0 auto;
+}
+
+@mixin btn($background){
+    background: $background;
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: white;
+}
+
+@mixin input{
+    padding: 8px;
+    outline: none;
+    border: 0;
+    background: #e8e8e8;
+    color: #272727;
+    font-weight: bold;
+    ::-webkit-input-placeholder { 
+        color:#272727;
+    }
+    ::-moz-placeholder { 
+       color:#272727;
+    }
+      
+}

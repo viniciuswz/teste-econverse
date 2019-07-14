@@ -1,0 +1,24 @@
+@import '../tools/mixin.scss';
+.see{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+    background-image: url('../../imgs/banner.png');
+    background-position: center;
+    background-size: cover;
+    &__content{
+        &--title{
+            color: white;
+            font-size: 30px
+        }
+        &--btn{
+            @include btn(red);
+            padding: 10px 10px;
+            margin: 10px auto;
+            display: block;
+            max-width: 150px;
+        }
+    }
+}

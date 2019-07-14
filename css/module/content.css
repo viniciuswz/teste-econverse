@@ -1,0 +1,128 @@
+.content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.content__frame {
+  display: block;
+  width: calc(100vw /2);
+  overflow: hidden;
+}
+
+.content__frame--img {
+  width: 100%;
+}
+
+.content__box {
+  display: flex;
+  align-items: top;
+  justify-content: center;
+  width: calc(100vw /2);
+  margin-top: 130px;
+}
+
+.content__align {
+  position: relative;
+  width: 60%;
+}
+
+.content__align--title, .content__align--paragraph {
+  text-align: center;
+}
+
+.content__align--title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.content__align--paragraph {
+  font-size: 18px;
+  margin-top: 20px;
+  line-height: 25px;
+}
+
+.content__align--row {
+  position: absolute;
+  right: 120px;
+  width: calc(100% + 100px);
+  background: grey;
+  height: 1px;
+  border: 0;
+}
+
+.content__align--btn {
+  background: red;
+  font-weight: bold;
+  text-align: center;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: white;
+  padding: 10px 10px;
+  margin: 10px auto;
+  display: block;
+  max-width: 150px;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.reverse .content__align--row {
+  left: 120px;
+  right: 0;
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  .content {
+    justify-content: space-between;
+  }
+  .content__frame {
+    width: 40%;
+  }
+  .content__box {
+    width: 60%;
+    margin-top: 0;
+    align-self: center;
+  }
+  .content__align {
+    width: 80%;
+  }
+  .content__align--paragraph {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .content {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .content__frame {
+    width: 100%;
+    max-width: 668px;
+    margin: 0 auto;
+  }
+  .content__box {
+    width: 100%;
+    margin-top: 0;
+    align-self: center;
+  }
+  .content__align {
+    width: 50%;
+  }
+  .content__align--paragraph {
+    font-size: 16px;
+  }
+  .content__align--row {
+    position: initial;
+    right: 0;
+    margin: 0 auto;
+    width: 80%;
+  }
+  .reverse {
+    flex-direction: row-reverse;
+  }
+  .reverse .content__align--row {
+    left: 0;
+  }
+}

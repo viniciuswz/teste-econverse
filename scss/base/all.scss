@@ -1,0 +1,4 @@
+@import '../tools/mixin.scss';
+.container{
+    @include container;
+}
