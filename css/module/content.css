@@ -1,3 +1,23 @@
+@font-face {
+  font-family: "ProximaNova-Bold";
+  src: url("../../fonts/ProximaNova-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "ProximaNova-Light";
+  src: url("../../fonts/ProximaNova-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "ProximaNova-Regular";
+  src: url("../../fonts/ProximaNova-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "ProximaNova-Semibold";
+  src: url("../../fonts/ProximaNova-Semibold.ttf") format("truetype");
+}
+
 .content {
   display: flex;
   justify-content: space-around;
@@ -33,25 +53,29 @@
 .content__align--title {
   font-size: 24px;
   margin-bottom: 10px;
+  color: #273578;
+  text-transform: lowercase;
+  font-family: 'ProximaNova-Light', Arial;
 }
 
 .content__align--paragraph {
   font-size: 18px;
   margin-top: 20px;
   line-height: 25px;
+  font-family: 'ProximaNova-Light', Arial;
 }
 
 .content__align--row {
   position: absolute;
   right: 120px;
   width: calc(100% + 100px);
-  background: grey;
+  background: #ebebeb;
   height: 1px;
   border: 0;
 }
 
 .content__align--btn {
-  background: red;
+  background: #65c4b6;
   font-weight: bold;
   text-align: center;
   font-size: 14px;
@@ -61,6 +85,7 @@
   margin: 10px auto;
   display: block;
   max-width: 150px;
+  font-family: 'ProximaNova-Bold', Arial;
 }
 
 .reverse {
@@ -70,6 +95,10 @@
 .reverse .content__align--row {
   left: 120px;
   right: 0;
+}
+
+.reverse .content__align--btn {
+  background: #273578;
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 769px) {

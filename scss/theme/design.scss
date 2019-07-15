@@ -1,0 +1,16 @@
+
+@import '../tools/mixin.scss';
+$whiteBlue: #65c4b6;
+$darkBlue: #273578;
+$darkGrey: #5b5b5b;
+$mediumGrey: #8c8c8c;
+$whiteGrey: #ebebeb;
+
+
+@include addFont('ProximaNova','Bold');
+@include addFont('ProximaNova','Light');
+@include addFont('ProximaNova','Regular');
+@include addFont('ProximaNova','Semibold');
+
+
+

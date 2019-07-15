@@ -2,3 +2,36 @@
 .container{
     @include container;
 }
+
+
+.sprite {
+    background-image: url('../../imgs/sprite.png');    background-repeat: no-repeat;
+    display: block;
+
+    &.sprite-arrow {
+        @include makeSprite(-5px, -5px, 18px, 31px);
+    }
+
+    &.sprite-facebook {
+        @include makeSprite(-33px, -5px, 11px, 20px);
+    }
+
+    &.sprite-instagram {
+        @include makeSprite(-54px, -5px, 20px, 20px);
+    }
+
+    &.sprite-lupa {
+        @include makeSprite(-84px, -5px, 9px, 9px);
+    }
+
+    &.sprite-mapa-ico {
+        @include makeSprite(-103px, -5px, 8px, 13px);
+    }
+
+    &.sprite-sacola-ico {
+        @include makeSprite(-121px, -5px, 13px, 16px);
+    }
+}
+
+
+

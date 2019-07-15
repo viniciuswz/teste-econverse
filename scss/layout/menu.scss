@@ -1,5 +1,5 @@
 @import '../tools/mixin.scss';
-
+@import '../theme/design.scss';
 .menu{
     display: flex;
     justify-content: center;
@@ -7,17 +7,18 @@
     &__main{
         display: flex;
         justify-content: center;
-
+        align-items: center;
         flex-wrap: wrap;
         &--name{
             display: block;
             margin: 0px 20px;
-            padding: 15px 0;   
+            padding: 26px 0;   
             border-bottom: 3px solid white;     
+            font-family: 'ProximaNova-Semibold', Arial;
             &.menu{
                 &__main{
                     &--name-ativo{
-                        border-bottom: 3px solid blue;
+                        border-bottom: 3px solid $whiteBlue;
                     }
                 }
             }
@@ -28,6 +29,7 @@
         }
         
         @include setOrderMenu(8);
+       
         
     }
     &__search{
@@ -41,7 +43,7 @@
     position: absolute;
     width: 100%;
     left: 0;
-    top: 51px;
+    top: 75px;
     
     overflow: hidden;
     height: auto;
@@ -63,12 +65,14 @@
         &--bold,&--link,&--link-bold,&--space{
             padding: 10px;
             width: 100%;
+            color: $darkGrey;
         }
         &--bold, &--link-bold{
-            font-weight: bold
+            font-family: 'ProximaNova-Bold', Arial;
+           
         }
         &--link{
-
+            font-family: 'ProximaNova-Regular', Arial;
         }
         &--link-bold{
 
@@ -131,11 +135,15 @@
                             background-color: blue;
                             color: white;
                         }
+                        
                     }
                 }
             }
             &--logo{
                 order: 0 !important;
+            }
+            &--item{
+                width: 100%;
             }
         }
     }

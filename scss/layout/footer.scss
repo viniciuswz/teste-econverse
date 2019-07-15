@@ -1,4 +1,5 @@
 @import '../tools/mixin.scss';
+@import '../theme/design.scss';
 .footer{
     @include container;
     padding-top: 10px;
@@ -6,8 +7,8 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        border-top: 1px solid rgb(194, 194, 194);
-        border-bottom: 1px solid rgb(194, 194, 194);
+        border-top: 1px solid $whiteGrey;
+        border-bottom: 1px solid $whiteGrey;
     }
     &__info{
         width: 250px;
@@ -17,15 +18,18 @@
     
         &--title{
             font-size: 18px;
-            color: #5c5c5c;
+            color:  $darkGrey;
             text-transform: uppercase;
+            font-family: 'ProximaNova-Semibold', Arial;
         }
         &--text{
-            color: #acacac;
+            color: $mediumGrey;
             margin-top: 5px;
+            font-family: 'ProximaNova-Regular', Arial;
         }
         &--paragraph{
-
+            color: $mediumGrey;
+            font-family: 'ProximaNova-Light', Arial;
         }
     }
     &__social{
@@ -52,8 +56,9 @@
             margin-top: 15px;
             margin-left: 5%;
             border: 0;
-            background:blue;
+            background:$darkBlue;
             color: white;
+            font-family: 'ProximaNova-Regular', Arial;
 
         }
     }
@@ -64,6 +69,7 @@
         height: 50px;
         line-height: 50px;
         margin: 0 auto;
+        font-family: 'ProximaNova-Regular', Arial;
     }
 
     &__end{
@@ -72,10 +78,11 @@
         align-items: center;
         flex-wrap: wrap;
         height: 35px;
-        background: blue;
+        background: $darkBlue;
         &--paragraph{
             color: white;
             text-transform: uppercase;
+            font-family: 'ProximaNova-Regular', Arial;
         }
     }
 }

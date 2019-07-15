@@ -12,6 +12,7 @@
 .see__content--title {
   color: white;
   font-size: 30px;
+  font-family: 'ProximaNova-Bold', Arial;
 }
 
 .see__content--btn {
@@ -25,4 +26,5 @@
   margin: 10px auto;
   display: block;
   max-width: 150px;
+  font-family: 'ProximaNova-Bold', Arial;
 }

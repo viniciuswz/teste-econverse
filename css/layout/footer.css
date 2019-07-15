@@ -1,3 +1,23 @@
+@font-face {
+  font-family: "ProximaNova-Bold";
+  src: url("../../fonts/ProximaNova-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "ProximaNova-Light";
+  src: url("../../fonts/ProximaNova-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "ProximaNova-Regular";
+  src: url("../../fonts/ProximaNova-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "ProximaNova-Semibold";
+  src: url("../../fonts/ProximaNova-Semibold.ttf") format("truetype");
+}
+
 .footer {
   display: block;
   width: 100%;
@@ -10,8 +30,8 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  border-top: 1px solid #c2c2c2;
-  border-bottom: 1px solid #c2c2c2;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
 }
 
 .footer__info {
@@ -23,13 +43,20 @@
 
 .footer__info--title {
   font-size: 18px;
-  color: #5c5c5c;
+  color: #5b5b5b;
   text-transform: uppercase;
+  font-family: 'ProximaNova-Semibold', Arial;
 }
 
 .footer__info--text {
-  color: #acacac;
+  color: #8c8c8c;
   margin-top: 5px;
+  font-family: 'ProximaNova-Regular', Arial;
+}
+
+.footer__info--paragraph {
+  color: #8c8c8c;
+  font-family: 'ProximaNova-Light', Arial;
 }
 
 .footer__newletter {
@@ -82,8 +109,9 @@
   margin-top: 15px;
   margin-left: 5%;
   border: 0;
-  background: blue;
+  background: #273578;
   color: white;
+  font-family: 'ProximaNova-Regular', Arial;
 }
 
 .footer__copyright {
@@ -92,6 +120,7 @@
   height: 50px;
   line-height: 50px;
   margin: 0 auto;
+  font-family: 'ProximaNova-Regular', Arial;
 }
 
 .footer__end {
@@ -100,10 +129,11 @@
   align-items: center;
   flex-wrap: wrap;
   height: 35px;
-  background: blue;
+  background: #273578;
 }
 
 .footer__end--paragraph {
   color: white;
   text-transform: uppercase;
+  font-family: 'ProximaNova-Regular', Arial;
 }

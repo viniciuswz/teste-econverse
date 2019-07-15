@@ -1,3 +1,23 @@
+@font-face {
+  font-family: "ProximaNova-Bold";
+  src: url("../../fonts/ProximaNova-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "ProximaNova-Light";
+  src: url("../../fonts/ProximaNova-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "ProximaNova-Regular";
+  src: url("../../fonts/ProximaNova-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "ProximaNova-Semibold";
+  src: url("../../fonts/ProximaNova-Semibold.ttf") format("truetype");
+}
+
 .menu {
   display: flex;
   justify-content: center;
@@ -7,18 +27,20 @@
 .menu__main {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
 }
 
 .menu__main--name {
   display: block;
   margin: 0px 20px;
-  padding: 15px 0;
+  padding: 26px 0;
   border-bottom: 3px solid white;
+  font-family: 'ProximaNova-Semibold', Arial;
 }
 
 .menu__main--name.menu__main--name-ativo {
-  border-bottom: 3px solid blue;
+  border-bottom: 3px solid #65c4b6;
 }
 
 .menu__main--logo {
@@ -63,7 +85,7 @@
   position: absolute;
   width: 100%;
   left: 0;
-  top: 51px;
+  top: 75px;
   overflow: hidden;
   height: auto;
   transition: 1s;
@@ -88,10 +110,15 @@
 .submenu__item--bold, .submenu__item--link, .submenu__item--link-bold, .submenu__item--space {
   padding: 10px;
   width: 100%;
+  color: #5b5b5b;
 }
 
 .submenu__item--bold, .submenu__item--link-bold {
-  font-weight: bold;
+  font-family: 'ProximaNova-Bold', Arial;
+}
+
+.submenu__item--link {
+  font-family: 'ProximaNova-Regular', Arial;
 }
 
 .submenu__item--space {
@@ -141,6 +168,9 @@
   }
   .menu__main--logo {
     order: 0 !important;
+  }
+  .menu__main--item {
+    width: 100%;
   }
   .submenu {
     z-index: 1;
