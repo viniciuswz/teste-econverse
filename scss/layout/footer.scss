@@ -34,6 +34,7 @@
     }
     &__social{
         display: flex;
+        margin-top: 10px;
         &--link{
             margin-right: 10px;
         }
@@ -80,12 +81,13 @@
         justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
-        padding: 10px;
+        
         background: $darkBlue;
         &--paragraph{
             color: white;
             text-transform: uppercase;
             font-family: 'ProximaNova-Regular', Arial;
+            margin: 10px;
         }
     }
 }
@@ -94,8 +96,17 @@
         
 
         .footer{
+            &__social{
+                justify-content: center;
+            }
             &__info{
                 text-align: center;
             }
+            &__end{
+                &--paragraph{
+                    text-align: center;
+               }
+            }
+
         }
 }

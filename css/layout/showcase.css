@@ -1,3 +1,7 @@
+.showcase {
+  margin-bottom: 15px;
+}
+
 .showcase__box {
   display: flex;
   flex-direction: column;
@@ -16,6 +20,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-top: 5px;
 }
 
 .showcase__view--arrow:nth-child(3) {

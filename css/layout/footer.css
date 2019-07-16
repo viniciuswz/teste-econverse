@@ -21,7 +21,7 @@
 .footer {
   display: block;
   width: 100%;
-  max-width: 1256px;
+  max-width: 1366px;
   margin: 0 auto;
   padding-top: 10px;
 }
@@ -61,6 +61,7 @@
 
 .footer__social {
   display: flex;
+  margin-top: 10px;
 }
 
 .footer__social--link {
@@ -135,7 +136,6 @@
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  padding: 10px;
   background: #273578;
 }
 
@@ -143,10 +143,17 @@
   color: white;
   text-transform: uppercase;
   font-family: 'ProximaNova-Regular', Arial;
+  margin: 10px;
 }
 
 @media only screen and (max-width: 768px) {
+  .footer__social {
+    justify-content: center;
+  }
   .footer__info {
+    text-align: center;
+  }
+  .footer__end--paragraph {
     text-align: center;
   }
 }
