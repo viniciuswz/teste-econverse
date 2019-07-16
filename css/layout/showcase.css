@@ -50,7 +50,7 @@
   display: block;
 }
 
-@media only screen and (max-width: 1366px) and (min-width: 1025px) {
+@media only screen and (min-width: 1025px) {
   .showcase__item {
     min-width: calc(100% / 4);
   }

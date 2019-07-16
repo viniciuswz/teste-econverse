@@ -125,6 +125,7 @@
 .footer__copyright {
   text-align: center;
   width: 80%;
+  font-size: 11px;
   margin: 20px auto;
   font-family: 'ProximaNova-Regular', Arial;
 }
@@ -134,7 +135,7 @@
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  height: 35px;
+  padding: 10px;
   background: #273578;
 }
 
@@ -142,4 +143,10 @@
   color: white;
   text-transform: uppercase;
   font-family: 'ProximaNova-Regular', Arial;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer__info {
+    text-align: center;
+  }
 }
