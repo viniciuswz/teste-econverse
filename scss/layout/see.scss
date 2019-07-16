@@ -1,11 +1,11 @@
 @import '../tools/mixin.scss';
+@import '../theme/design.scss';
 .see{
     height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: blue;
-    background-image: url('../../imgs/banner.png');
+    background-image: url('../../imgs/bannerbottom.png');
     background-position: center;
     background-size: cover;
     &__content{
@@ -15,7 +15,7 @@
             font-family: 'ProximaNova-Bold', Arial;
         }
         &--btn{
-            @include btn(red);
+            @include btn($whiteBlue);
             padding: 10px 10px;
             margin: 10px auto;
             display: block;

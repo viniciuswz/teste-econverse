@@ -18,6 +18,10 @@
   align-items: center;
 }
 
+.showcase__view--arrow:nth-child(3) {
+  transform: scaleX(-1);
+}
+
 .showcase__slide {
   display: flex;
   overflow: hidden;

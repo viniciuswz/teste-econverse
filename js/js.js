@@ -37,7 +37,6 @@ $(document).ready(function(){
         }else{
             counter = counter == total - responsiveValue ? 0 : ++counter;
         }
-
         let width = element.offsetWidth;
         let moveTo = width * counter;
         
@@ -53,12 +52,37 @@ $(document).ready(function(){
         }
         $(this).toggleClass('menu__main--name-ativo');
     })
+
     $('.submenu__item--bold').click(function(e){
-        
         let element = $(this).parent().find('.submenu__show');
         if(element['length'] == 1){
             element.toggleClass('submenu__show-ativo');
         }
     })
+
+    $('.header__mobile--menu').click(function(){
+        $('.header__content').toggleClass('ativo')
+    })
+
+    function scrollBanner() {
+        let scrollPos;
+        let menu = $('.header');
+        let banner = $('.banner');
+        let width = $(window).width();
+        scrollPos = window.scrollY;
+        console.log(scrollPos,banner.height())
+        if (scrollPos  - menu.height() > banner.height()){
+            if(width > 1024){
+                menu.addClass('fixed');
+            }
+        }
+        if (scrollPos  + menu.height() < banner.height()){
+            if(width > 1024){
+                menu.removeClass('fixed');
+            }
+        }
+      }
+      
+      window.addEventListener('scroll', scrollBanner);
     
 })

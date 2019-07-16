@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/base/all.css">
     <link rel="stylesheet" href="css/base/reset.css">
     <!--layout-->
+    <link rel="stylesheet" href="css/layout/header.css">
+    <link rel="stylesheet" href="css/layout/top.css">
     <link rel="stylesheet" href="css/layout/menu.css">
     <link rel="stylesheet" href="css/layout/banner.css">
     <link rel="stylesheet" href="css/layout/showcase.css">
@@ -26,73 +28,91 @@
 
 </head>
 <body>
-    <header class="container">
-        <div></div>
-        <nav class="menu">
-            <ul class="menu__main">
-                <li class="menu__main--item menu__main--logo"><img src="imgs/logo.png" alt=""></li>
-                <li class="menu__main--item">
-                    <span class="menu__main--name">Feminino</span>
-                    <div class="submenu">
-                        <div class="submenu__content">
-                            <div class="submenu__item">
-                                <a href="#" class="submenu__item--bold">Best Sellers</a>
-                                <a href="#" class="submenu__item--bold">New in</a>
-                                <a href="#" class="submenu__item--bold">Made to order</a>
-                                <a href="#" class="submenu__item--bold">Shop instagram</a>
-                            </div>
-                            <div class="submenu__item">
-                                <h3 href="#" class="submenu__item--bold">Modelos</h3>
-                                <div class="submenu__show">
-                                    <a href="#" class="submenu__item--link">Loafers</a>
-                                    <a href="#" class="submenu__item--link">Flats</a>
-                                    <a href="#" class="submenu__item--link">Heels</a>
-                                    <a href="#" class="submenu__item--link-bold">Ver todos</a>
+    <header class="header container">
+        <div class="header__mobile">
+            <img src="imgs/logo.png" alt="logo" class="header__mobile--logo-mobile">
+            <img src="imgs/bars.svg" alt="menu" class="header__mobile--menu">
+        </div>
+        <div class="header__content">
+                <div class="top">
+                    <a href="#" class="top__map">
+                        <i class="sprite sprite-mapa-ico"></i>
+                        <span class="top__map--txt">Nossas lojas</span>
+                    </a>
+                    <div class="top__box">
+                        <p class="top__box--purchase"> My blue's <span class="top__box--value">0</span><i class="sprite sprite-sacola-ico"></i></p>
+                    </div>
+                    <div class="top__box">
+                        <a href="#" class="top__box--link">Sing in | Cadastre-se</a>  
+                    </div>
+                </div>
+            <nav class="menu">
+                <ul class="menu__main">
+                    <li class="menu__main--item menu__main--logo"><img src="imgs/logo.png" alt="logo" class="menu__main--img"></li>
+                    <li class="menu__main--item">
+                        <span class="menu__main--name">Feminino</span>
+                        <div class="submenu">
+                            <div class="submenu__content">
+                                <div class="submenu__item">
+                                    <a href="#" class="submenu__item--bold">Best Sellers</a>
+                                    <a href="#" class="submenu__item--bold">New in</a>
+                                    <a href="#" class="submenu__item--bold">Made to order</a>
+                                    <a href="#" class="submenu__item--bold">Shop instagram</a>
                                 </div>
-                            </div>
-                            <div class="submenu__item">
-                                <h3 href="#" class="submenu__item--bold">Estilos</h3>
-                                <div class="submenu__show">
-                                    <a href="#" class="submenu__item--link">Estilos</a>
-                                    <a href="#" class="submenu__item--link">Básicos</a>
-                                    <a href="#" class="submenu__item--link">Fun</a>
-                                    <a href="#" class="submenu__item--link-bold">Ver todos</a>
+                                <div class="submenu__item">
+                                    <h3 href="#" class="submenu__item--bold">Modelos</h3>
+                                    <div class="submenu__show">
+                                        <a href="#" class="submenu__item--link">Loafers</a>
+                                        <a href="#" class="submenu__item--link">Flats</a>
+                                        <a href="#" class="submenu__item--link">Heels</a>
+                                        <a href="#" class="submenu__item--link-bold">Ver todos</a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="submenu__item">
-                                <h3 href="#" class="submenu__item--bold">Ocasião</h3>
-                                <div class="submenu__show">
+                                <div class="submenu__item">
+                                    <h3 href="#" class="submenu__item--bold">Estilos</h3>
+                                    <div class="submenu__show">
+                                        <a href="#" class="submenu__item--link">Estilos</a>
+                                        <a href="#" class="submenu__item--link">Básicos</a>
+                                        <a href="#" class="submenu__item--link">Fun</a>
+                                        <a href="#" class="submenu__item--link-bold">Ver todos</a>
+                                    </div>
+                                </div>
+                                <div class="submenu__item">
+                                    <h3 href="#" class="submenu__item--bold">Ocasião</h3>
+                                    <div class="submenu__show">
+                                        <a href="#" class="submenu__item--link">praia</a>
+                                        <a href="#" class="submenu__item--link">Viagem</a>
+                                        <a href="#" class="submenu__item--link">Trabalho</a>
+                                        <a href="#" class="submenu__item--link-bold">Ver todos</a>
+                                    </div>
+                                </div>
+                                <div class="submenu__item">
+                                    <span href="#" class="submenu__item--space"></span>
                                     <a href="#" class="submenu__item--link">praia</a>
                                     <a href="#" class="submenu__item--link">Viagem</a>
                                     <a href="#" class="submenu__item--link">Trabalho</a>
                                     <a href="#" class="submenu__item--link-bold">Ver todos</a>
                                 </div>
                             </div>
-                            <div class="submenu__item">
-                                <span href="#" class="submenu__item--space"></span>
-                                <a href="#" class="submenu__item--link">praia</a>
-                                <a href="#" class="submenu__item--link">Viagem</a>
-                                <a href="#" class="submenu__item--link">Trabalho</a>
-                                <a href="#" class="submenu__item--link-bold">Ver todos</a>
-                            </div>
                         </div>
-                    </div>
-                </li>
-                <li class="menu__main--item"><span class="menu__main--name">Masculino</span></li>
-                <li class="menu__main--item"><span class="menu__main--name">Mini</span></li>
-                <li class="menu__main--item"><span class="menu__main--name">Gifts</span></li>
-                <li class="menu__main--item"><span class="menu__main--name">Brindes</span></li>
-                <li class="menu__main--item"><span class="menu__main--name">Sale</span></li>
-            </ul>
-            <div class="menu__search">
-                <input type="text" placeholder="buscar">
-            </div>
-
-        </nav>
+                    </li>
+                    <li class="menu__main--item"><span class="menu__main--name">Masculino</span></li>
+                    <li class="menu__main--item"><span class="menu__main--name">Mini</span></li>
+                    <li class="menu__main--item"><span class="menu__main--name">Gifts</span></li>
+                    <li class="menu__main--item"><span class="menu__main--name">Brindes</span></li>
+                    <li class="menu__main--item"><span class="menu__main--name">Sale</span></li>
+                </ul>
+                <form class="menu__search">
+                    <input type="text" placeholder="buscar" class="menu__search--input">
+                    <button type="submit" class="menu__search--btn"><i class='sprite sprite-lupa'></i></button>
+                </form>
+    
+            </nav>
+        </div>
     </header>
     <main class="container">
         <section class="banner">
-            <img src="imgs/banner.png" alt="" class="banner--img">
+            <img src="imgs/banner.png" alt="banner" class="banner--img">
         </section>
         <section class="showcase">
             <div class="showcase__box">
@@ -100,7 +120,7 @@
                 <p class="showcase__box--paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit seddo</p>
             </div>
             <div class="showcase__view">
-                <span class="showcase__view--arrow" id="prev">-</span>
+                <span class="showcase__view--arrow" id="prev"><i class="sprite sprite-arrow"></i></span>
                 <div class="showcase__slide">
                     <div class="showcase__slide--content">
                         <div class="showcase__item">
@@ -140,13 +160,13 @@
                         </div>
                     </div>
                 </div>
-                <span class="showcase__view--arrow" id="next">-></span>
+                <span class="showcase__view--arrow" id="next"><i class="sprite sprite-arrow"></i></span>
             </div>
         </section>
 
         <section class="content">
             <div class="content__frame">
-                <img src="imgs/img1.png" alt="" class="content__frame--img">
+                <img src="imgs/img1.png" alt="blog" class="content__frame--img">
             </div>
             <div class="content__box">
                 <div class="content__align">
@@ -161,7 +181,7 @@
         </section>
         <section class="reverse content">
             <div class="content__frame">
-                <img src="imgs/img2.png" alt="" class="content__frame--img">
+                <img src="imgs/img2.png" alt="lojas" class="content__frame--img">
             </div>
             <div class="content__box">
                 <div class="content__align">
@@ -177,7 +197,7 @@
 
         <section class="content">
             <div class="content__frame">
-                <img src="imgs/img3.png" alt="" class="content__frame--img">
+                <img src="imgs/img3.png" alt="personalize" class="content__frame--img">
             </div>
             <div class="content__box">
                 <div class="content__align">
@@ -192,7 +212,7 @@
         </section>
         <section class="reverse content">
             <div class="content__frame">
-                <img src="imgs/img4.png" alt="" class="content__frame--img">
+                <img src="imgs/img4.png" alt="sobre" class="content__frame--img">
             </div>
             <div class="content__box">
                 <div class="content__align">
@@ -207,7 +227,7 @@
         </section>
         <section class="content">
             <div class="content__frame">
-                <img src="imgs/img3.png" alt="" class="content__frame--img">
+                <img src="imgs/img3.png" alt="compre" class="content__frame--img">
             </div>
             <div class="content__box">
                 <div class="content__align">

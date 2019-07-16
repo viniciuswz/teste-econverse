@@ -15,7 +15,13 @@
     &__view{
         display: flex;
         justify-content: space-around;
-        align-items: center
+        align-items: center;
+        &--arrow{
+          
+            &:nth-child(3){
+                transform: scaleX(-1)
+            }
+        }
     }
 
     &__slide{

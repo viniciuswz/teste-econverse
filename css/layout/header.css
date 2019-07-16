@@ -1,0 +1,114 @@
+.header__mobile {
+  display: none;
+}
+
+@media only screen and (min-width: 769px) {
+  .header.fixed {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+  .header.fixed .header__content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .header.fixed .menu {
+    order: 1;
+    justify-content: flex-start;
+    position: initial;
+  }
+  .header.fixed .menu__search {
+    position: initial;
+    right: 0;
+  }
+  .header.fixed .menu__main {
+    margin-left: 20px;
+  }
+  .header.fixed .menu__main--name {
+    margin: 0px 10px;
+  }
+  .header.fixed .menu__main--logo {
+    order: 1 !important;
+    overflow: hidden;
+    width: 35px;
+  }
+  .header.fixed .menu__main--img {
+    width: 125px;
+  }
+  .header.fixed .menu__search--input {
+    width: 100px;
+  }
+  .header.fixed .top {
+    order: 2;
+    align-self: center;
+    width: auto;
+    margin: 0;
+    margin-right: 20px;
+  }
+  .header.fixed .top__map {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 769px) {
+  .header.fixed .header__content {
+    flex-direction: column;
+  }
+  .header.fixed .menu {
+    justify-content: center;
+    order: 2;
+  }
+  .header.fixed .menu__main {
+    margin-left: 20px;
+  }
+  .header.fixed .top {
+    justify-content: center;
+    margin-right: 0;
+    order: 1;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    position: fixed;
+    height: 90px;
+    z-index: 1;
+  }
+  .header__mobile {
+    background: white;
+    position: relative;
+    display: block;
+  }
+  .header__mobile--logo-mobile {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 10px auto;
+    width: 137px;
+  }
+  .header__mobile--menu {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+  }
+  .header__content {
+    overflow: scroll;
+    bottom: 1px;
+    position: relative;
+    height: 0;
+    transition: .7s;
+    background-color: white;
+  }
+  .header__content.ativo {
+    height: calc(100vh - 90px);
+  }
+}

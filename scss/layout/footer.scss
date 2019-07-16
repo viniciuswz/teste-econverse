@@ -33,7 +33,9 @@
         }
     }
     &__social{
+        display: flex;
         &--link{
+            margin-right: 10px;
         }
     }
     &__newletter{
@@ -66,9 +68,9 @@
     &__copyright{
         text-align: center;
         width: 80%;
-        height: 50px;
-        line-height: 50px;
-        margin: 0 auto;
+        
+        
+        margin: 20px auto;
         font-family: 'ProximaNova-Regular', Arial;
     }
 

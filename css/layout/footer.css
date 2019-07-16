@@ -59,6 +59,14 @@
   font-family: 'ProximaNova-Light', Arial;
 }
 
+.footer__social {
+  display: flex;
+}
+
+.footer__social--link {
+  margin-right: 10px;
+}
+
 .footer__newletter {
   width: 250px;
   display: flex;
@@ -72,16 +80,16 @@
   outline: none;
   border: 0;
   background: #e8e8e8;
-  color: #272727;
+  color: #5b5b5b;
   font-weight: bold;
 }
 
 .footer__newletter--input-100 ::-webkit-input-placeholder {
-  color: #272727;
+  color: #5b5b5b;
 }
 
 .footer__newletter--input-100 ::-moz-placeholder {
-  color: #272727;
+  color: #5b5b5b;
 }
 
 .footer__newletter--input-70 {
@@ -90,17 +98,17 @@
   outline: none;
   border: 0;
   background: #e8e8e8;
-  color: #272727;
+  color: #5b5b5b;
   font-weight: bold;
   margin-top: 15px;
 }
 
 .footer__newletter--input-70 ::-webkit-input-placeholder {
-  color: #272727;
+  color: #5b5b5b;
 }
 
 .footer__newletter--input-70 ::-moz-placeholder {
-  color: #272727;
+  color: #5b5b5b;
 }
 
 .footer__newletter--enviar {
@@ -117,9 +125,7 @@
 .footer__copyright {
   text-align: center;
   width: 80%;
-  height: 50px;
-  line-height: 50px;
-  margin: 0 auto;
+  margin: 20px auto;
   font-family: 'ProximaNova-Regular', Arial;
 }
 

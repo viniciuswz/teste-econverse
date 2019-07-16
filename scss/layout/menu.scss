@@ -4,6 +4,7 @@
     display: flex;
     justify-content: center;
     position: relative;
+    align-items: center;
     &__main{
         display: flex;
         justify-content: center;
@@ -34,7 +35,30 @@
     }
     &__search{
         position: absolute;
-        right: 0;
+        right: -10px;
+        &--btn{
+            border: 0;
+            background: none;
+            position: relative;
+            right: 31px;
+            padding: 9px;
+            -webkit-appearance: none;
+           
+            
+        }
+        &--input{
+            border: 0;
+            border-bottom: 2px solid $whiteGrey;
+            outline: 0;
+            height: 30px;
+            text-transform: uppercase;
+            &::-webkit-input-placeholder { 
+                color:$mediumGrey;
+            }
+            &::-moz-placeholder { 
+               color:$mediumGrey;
+            }
+        }
     }
 }
 
@@ -73,6 +97,7 @@
         }
         &--link{
             font-family: 'ProximaNova-Regular', Arial;
+          
         }
         &--link-bold{
 
@@ -80,8 +105,8 @@
         &--space{
             height: 23px;
         }
-        &--{
-
+        &--bold{
+           
         }
     }
     &__show{
@@ -98,15 +123,24 @@
 
 @media only screen and (max-width:1024px) and(min-width:769px){
     .menu{
-        justify-content: space-around;
+        justify-content: space-between;
         &__search{
             position: initial;
             right: 0;
            
         }
         &__main{
+            margin-left: 20px;
             &--name{
                 margin: 0px 10px;
+            }
+            &--logo{
+                order: 1 !important;
+                overflow: hidden;
+                width:35px
+            }
+            &--img{
+                width: 125px;
             }
         }
     }
@@ -119,11 +153,28 @@
         &__search{
             position: initial;
             right: 0;
+            order: 1;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            &--input{
+                
+                border-bottom: 3px solid #ebebeb;
+               margin-left: 30px;
+                height: 30px;
+                padding: 13px;
+                width: 80%;
+                text-transform: uppercase;            
+            }
+
         }
+
         &__main{
             flex-direction: column;
             width: 100%;
             margin: 0 auto;
+            order: 2;
+            
             &--name{
                 padding: 15px 10px; 
                 margin: 0 0;
@@ -132,7 +183,7 @@
                     &__main{
                         &--name-ativo{
                             border-bottom: none;
-                            background-color: blue;
+                            background-color: $whiteBlue;
                             color: white;
                         }
                         
@@ -141,6 +192,11 @@
             }
             &--logo{
                 order: 0 !important;
+                display: none;
+            }
+            &--img{
+                margin: 0 auto;
+                display: block
             }
             &--item{
                 width: 100%;
@@ -151,9 +207,16 @@
         z-index: 1;
         display: block;
         position: initial;
-        
-       
-        
+        h3{
+            &.submenu{
+                &__item{
+                    &--bold{
+                        background: $darkGrey;
+                        color: white;
+                    }
+                }
+            }
+        }
         &__content{
             flex-direction: column;
             align-items: center;
@@ -162,13 +225,17 @@
         }
         &__item{
             width: 100%;
+            &--link{
+                font-family: 'ProximaNova-Regular', Arial;
+             background: $whiteGrey; 
+            }
         }
         &__show{
             width: 100%;
             overflow: hidden;
             height: auto;
             max-height: 0;
-            transition: 2s;
+            transition: .7s;
         }
 
         &__show.submenu{
